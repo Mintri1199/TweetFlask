@@ -5,9 +5,9 @@ import random
 
 app = Flask(__name__)
 
+
 @app.route('/')
 @app.route('/index')
-
 def index():
     start = t.Markov(c.clean_up_text('queen_reign.txt'))
     start.getting_types()
@@ -15,3 +15,5 @@ def index():
     sentence = start.multiple_runs(random.randint(5 , 15))
 
     return render_template("index.html", title=None, sentence=sentence) 
+
+
