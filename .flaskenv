@@ -1,1 +1,1 @@
-FLASK_APP=tweet_gen.py
+FLASK_APP=app.py
