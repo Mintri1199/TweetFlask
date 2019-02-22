@@ -1,4 +1,3 @@
-from app import app
 import random
 from clean_text import clean_up_text
 
